@@ -22,8 +22,8 @@ for i,v in pairs(game:GetDescendants()) do
     then
         if (v.Name == "ResetGui" and not first) or v.Name ~= "ResetGui" then
             local txt = tostring(decompile(v))
-            txt = txt .. "\n" .. v:GetFullName() .. "\n"
-            logText("penis", txt)
+            txt = txt .. "\n--// " .. v:GetFullName() .. "\n\n"
+            logText("penis.lua", txt)
             first = true
         end
     end
